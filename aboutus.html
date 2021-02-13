@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Responsive Flexbox Cards</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <style type="text/css">
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fefefe;
+  font-family: sans-serif;
+}
+
+.container1 {
+  width: 90%;
+  margin: 50px auto;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  width: 30%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container1 {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+.pageend{
+      width: 100%;
+      height: 100px;
+      background-color: black;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+            <header>
+                  <nav>
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="First_page.html">HOME</a></li>
+                                    <li><a href="Diet_plan.html">DIET PLAN</a></li>
+                                    <li><a href="#">RECIPIES</a></li>
+                                    <li><a href="aboutus.html">ABOUT US</a></li>
+                                    
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+    </div>
+  <div class="container1">
+    <div class="heading">
+      <div class="about-section">
+      <h1>About Us Page</h1>
+      <p>The only Health and Wellness app you will ever need.</p>
+      <p>10+ million happy users • 5+ million kgs lost • 600+ coaches</p>
+    </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <div class="card-header">
+          <img src="download.jpg" alt="Vandana" style="width:100%">
+        </div>
+        <div class="card-body">
+          <h2>Vandana Chanchlani</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Most important person, front end master</p>
+          <p>vandanachanchlani@gmail.com</p>
+          <p>Contact : +91 1234567890</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="download.png" alt="Vandana" style="width:100%">
+        </div>
+        <div class="card-body">
+          <h2>Jai Mulani</h2>
+          <p class="title">Art Director</p>
+          <p>Most important person</p>
+          <p>jaimulani@gmail.com</p>
+          <p>Contact : +91 2345678901</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="download.png" alt="Vandana" style="width:100%">
+        </div>
+        <div class="card-body">
+          <h2>Jayesh Parsnani</h2>
+          <p class="title">Designer</p>
+          <p>Most important person, backend master.</p>
+          <p>jayeshparsnani@gmail.com</p>
+          <p>Contact : +91 3456789012 </p>
+        </div>
+      </div>
+      </div>
+  </div>
+
+ <footer class="footer-distributed">       
+    <div class="footer-left">        
+      <h3>AI Dietician For Diabetic People</h3>        
+      <p class="footer-links">          
+        <a href="First_page.html">Home</a>          |           
+        <a href="aboutus.html">About Us</a>          
+      </p>        
+      <p class="footer-company-name">© 2020 AI Dietician for Diabetic People</p>      
+    </div>      
+    <div class="footer-center">         
+      <div>           
+         <a href="https://www.google.co.in/maps/place/18%C2%B057'41.7%22N+72%C2%B048'47.4%22E/@18.961585,72.8126058,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d18.9615853!4d72.8131528?hl=en&authuser=2" >
+          <i class="fa fa-map-marker"></i></a>           
+          <p>07 JVJ road, Nana Chowk Mumbai, India</p>        
+      </div>        
+      <div>           
+        <i class="fa fa-phone"></i>           
+        <p>+91 0023 156789</p>        
+      </div>        
+      <div>           
+        <i class="fa fa-envelope"></i>          
+        <p><a href="mailto:jaimulani0718@gmail.com" style="color: black">contact us @ aidiabeties.com</a></p>         
+      </div>      
+    </div>      
+    <div class="footer-right">        
+      <p class="footer-company-about">          
+        <span>About the website</span>
+    Our website will provide you diet at to your convienience, to your ease. 
+    </p>         
+        <div class="footer-icons">          
+          <a href="#"><i class="fa fa-facebook"></i></a>          
+          <a href="#"><i class="fa fa-twitter"></i></a>           
+          <a href="#"><i class="fa fa-instagram"></i></a>           
+          <a href="#"><i class="fa fa-linkedin"></i></a>          
+          <a href="#"><i class="fa fa-youtube"></i></a>         
+        </div>      
+      </div>    
+    </footer>
+
+
+  <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+</body>
+
+</html>
